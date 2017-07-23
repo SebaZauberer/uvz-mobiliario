@@ -322,18 +322,20 @@ section {
         .portfolio-caption {
             max-width: 360px;
             margin: 0 auto;
-            background-color: white;
+            background-color: @gray-darker;
             text-align: center;
             padding: 25px;
             h4 {
                 text-transform: none;
                 margin: 0;
+                color: @blanco;
             }
             p {
                 .serif-font;
                 font-style: italic;
                 font-size: 16px;
                 margin: 0;
+                color: @gray-light;
             }
         }
     }
@@ -696,8 +698,8 @@ aside.clients {
         border: none;
         min-height: 100%;
         padding: 100px 0;
-        text-align: center;
         h2 {
+            text-align: center;
             margin-bottom: 15px;
             font-size: 3em;
         }
@@ -709,12 +711,13 @@ aside.clients {
             .serif-font;
             font-style: italic;
             font-size: 16px;
+            text-align: center;
         }
         ul.list-inline {
             margin-bottom: 30px;
             margin-top: 0;
         }
-        img {
+        >img {
             margin-bottom: 30px;
         }
     }
@@ -731,9 +734,9 @@ aside.clients {
         }
         .lr {
             height: 75px;
-            width: 1px;
+            width: 1px*3;
             margin-left: 35px;
-            background-color: @gray-darker;
+            background-color: @theme-primary;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */
@@ -742,8 +745,8 @@ aside.clients {
             z-index: 1051;
             .rl {
                 height: 75px;
-                width: 1px;
-                background-color: @gray-darker;
+                width: 1px*3;
+                background-color: @theme-primary;
                 transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 /* IE 9 */

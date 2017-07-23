@@ -39,11 +39,9 @@
     $('header').backstretch([
           "./img/fondo-prueba-1.jpg",
           "./img/fondo-prueba-2.jpg",
-          "./img/fondo-prueba-3.jpg"
         ], {
             fade: 750,
             duration: 2500
         });
-    
 
 })(jQuery); // End of use strict

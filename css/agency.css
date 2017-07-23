@@ -366,19 +366,21 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption {
   max-width: 360px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #222222;
   text-align: center;
   padding: 25px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
   margin: 0;
+  color: #ffffff;
 }
 #portfolio .portfolio-item .portfolio-caption p {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
   margin: 0;
+  color: #777777;
 }
 #portfolio * {
   z-index: 2;
@@ -655,9 +657,9 @@ aside.clients img {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
 }
 .portfolio-modal .modal-content h2 {
+  text-align: center;
   margin-bottom: 15px;
   font-size: 3em;
 }
@@ -669,12 +671,13 @@ aside.clients img {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
+  text-align: center;
 }
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 30px;
   margin-top: 0;
 }
-.portfolio-modal .modal-content img {
+.portfolio-modal .modal-content > img {
   margin-bottom: 30px;
 }
 .portfolio-modal .close-modal {
@@ -691,9 +694,9 @@ aside.clients img {
 }
 .portfolio-modal .close-modal .lr {
   height: 75px;
-  width: 1px;
+  width: 3px;
   margin-left: 35px;
-  background-color: #222222;
+  background-color: #ff5000;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   /* IE 9 */
@@ -703,8 +706,8 @@ aside.clients img {
 }
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
-  width: 1px;
-  background-color: #222222;
+  width: 3px;
+  background-color: #ff5000;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
