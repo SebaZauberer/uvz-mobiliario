@@ -90,7 +90,7 @@ h6 {
     border-color: transparent;
     .navbar-brand {
         width: 60%;
-        padding-top: 0;
+        padding-top: 0+1px;
         img{
             width: 100%;
             max-width: 240px;
@@ -705,21 +705,30 @@ aside.clients {
         box-shadow: none;
         border: none;
         min-height: 100%;
-        padding: 100px 0;
+        padding: 50px 0 100px;
         h2 {
             text-align: center;
             margin-bottom: 15px;
             font-size: 3em;
+            img{
+                width: 100%;
+                max-width: 250px;
+                display: table;
+                margin: 0 auto;
+            }
+        }
+        h3{
+            margin-top: 60px;
         }
         p {
             margin-bottom: 30px;
         }
         p.item-intro {
-            margin: 20px 0 30px;
+            margin: 20px 0 30px/2;
+            min-height: 122px;
             .serif-font;
             font-style: italic;
             font-size: 16px;
-            text-align: center;
         }
         ul.list-inline {
             margin-bottom: 30px;

@@ -147,7 +147,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-brand {
   width: 60%;
-  padding-top: 0;
+  padding-top: 1px;
 }
 .navbar-custom .navbar-brand img {
   width: 100%;
@@ -663,22 +663,31 @@ aside.clients img {
   box-shadow: none;
   border: none;
   min-height: 100%;
-  padding: 100px 0;
+  padding: 50px 0 100px;
 }
 .portfolio-modal .modal-content h2 {
   text-align: center;
   margin-bottom: 15px;
   font-size: 3em;
 }
+.portfolio-modal .modal-content h2 img {
+  width: 100%;
+  max-width: 250px;
+  display: table;
+  margin: 0 auto;
+}
+.portfolio-modal .modal-content h3 {
+  margin-top: 60px;
+}
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
 }
 .portfolio-modal .modal-content p.item-intro {
-  margin: 20px 0 30px;
+  margin: 20px 0 15px;
+  min-height: 122px;
   font-family: 'Poppins', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 16px;
-  text-align: center;
 }
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 30px;
