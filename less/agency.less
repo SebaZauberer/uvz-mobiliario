@@ -693,6 +693,8 @@ aside.clients {
 }
 
 .portfolio-modal {
+    top: 5%;
+    bottom: 5%;
     .modal-dialog {
         margin: 0;
         height: 100%;
@@ -705,10 +707,11 @@ aside.clients {
         box-shadow: none;
         border: none;
         min-height: 100%;
-        padding: 50px 0 100px;
+        padding: 0px 0 100px;
         h2 {
             text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 45px;
+            margin-top: 0;
             font-size: 3em;
             img{
                 width: 100%;
@@ -730,9 +733,9 @@ aside.clients {
             font-style: italic;
             font-size: 16px;
         }
-        ul.list-inline {
+        ul{
             margin-bottom: 30px;
-            margin-top: 0;
+            margin-top: 30px;
         }
         >img {
             margin-bottom: 30px;
@@ -740,17 +743,17 @@ aside.clients {
     }
     .close-modal {
         position: absolute;
-        width: 75px;
-        height: 75px;
+        width: 45px;
+        height: 55px;
         background-color: transparent;
-        top: 25px;
+        top: 5px;
         right: 25px;
         cursor: pointer;
         &:hover {
             opacity: 0.3;
         }
         .lr {
-            height: 75px;
+            height: 55px;
             width: 1px*3;
             margin-left: 35px;
             background-color: @theme-primary;
@@ -761,7 +764,7 @@ aside.clients {
             /* Safari and Chrome */
             z-index: 1051;
             .rl {
-                height: 75px;
+                height: 55px;
                 width: 1px*3;
                 background-color: @theme-primary;
                 transform: rotate(90deg);
@@ -780,6 +783,10 @@ aside.clients {
     .modal-backdrop {
         opacity: 0;
         display: none;
+    }
+    @media(max-width:767px){
+        top: 0;
+        bottom: 0;
     }
 }
 

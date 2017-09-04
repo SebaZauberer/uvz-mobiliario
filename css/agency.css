@@ -651,6 +651,10 @@ aside.clients img {
 .btn:active:focus {
   outline: none;
 }
+.portfolio-modal {
+  top: 5%;
+  bottom: 5%;
+}
 .portfolio-modal .modal-dialog {
   margin: 0;
   height: 100%;
@@ -663,11 +667,12 @@ aside.clients img {
   box-shadow: none;
   border: none;
   min-height: 100%;
-  padding: 50px 0 100px;
+  padding: 0px 0 100px;
 }
 .portfolio-modal .modal-content h2 {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
+  margin-top: 0;
   font-size: 3em;
 }
 .portfolio-modal .modal-content h2 img {
@@ -689,19 +694,19 @@ aside.clients img {
   font-style: italic;
   font-size: 16px;
 }
-.portfolio-modal .modal-content ul.list-inline {
+.portfolio-modal .modal-content ul {
   margin-bottom: 30px;
-  margin-top: 0;
+  margin-top: 30px;
 }
 .portfolio-modal .modal-content > img {
   margin-bottom: 30px;
 }
 .portfolio-modal .close-modal {
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 45px;
+  height: 55px;
   background-color: transparent;
-  top: 25px;
+  top: 5px;
   right: 25px;
   cursor: pointer;
 }
@@ -709,7 +714,7 @@ aside.clients img {
   opacity: 0.3;
 }
 .portfolio-modal .close-modal .lr {
-  height: 75px;
+  height: 55px;
   width: 3px;
   margin-left: 35px;
   background-color: #ff5000;
@@ -721,7 +726,7 @@ aside.clients img {
   z-index: 1051;
 }
 .portfolio-modal .close-modal .lr .rl {
-  height: 75px;
+  height: 55px;
   width: 3px;
   background-color: #ff5000;
   transform: rotate(90deg);
@@ -738,6 +743,12 @@ aside.clients img {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+@media (max-width: 767px) {
+  .portfolio-modal {
+    top: 0;
+    bottom: 0;
+  }
 }
 ::-moz-selection {
   text-shadow: none;
